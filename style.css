@@ -1,0 +1,11 @@
+
+/* esto sirve para el color del fondo */
+#footer{
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+}
+
+/* esto sirve para el color de las palabras */
+#footer a{
+    color: rgb(253, 255, 130);
+    text-decoration: none;
+}
