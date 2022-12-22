@@ -1,3 +1,13 @@
+/* esto sirve para decorar el header */
+#header img{
+width: 80px;
+}
+
+/* esto sirve para decorar el mensaje descataco del header */
+.text-destacado{
+ color: orangered !important;
+}
+
 
 /* esto sirve para el color del fondo */
 #footer{
@@ -6,6 +16,9 @@
 
 /* esto sirve para el color de las palabras */
 #footer a{
-    color: rgb(253, 255, 130);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
+
+
