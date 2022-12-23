@@ -10,6 +10,12 @@ width: 80px;
  color: orangered !important;
 }
 
+/* esto sirve para cambiar el color del 1r boton que dice "vamos a dar un paseo" */
+.btn-animal{
+background-color: orangered;
+color:white;
+} 
+
 /* para decorar el carusel con texto en cada imagen*/
 #main .carousel-inner img{
 max-height: 70vh;
