@@ -44,6 +44,18 @@ color:white;
 height: 100%;
 }
 
+/* estilo de las cartas */
+#tarjetas {
+background: rgb(255, 255, 255);
+}
+#tarjetas img {
+height: 348px;
+object-fit: cover;
+}
+.badges{
+text-align: right;
+}
+
 /* esto sirve para el color del fondo */
 #footer{
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
