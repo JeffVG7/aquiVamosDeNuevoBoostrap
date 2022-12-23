@@ -1,0 +1,53 @@
+/* {} */
+
+/* esto sirve para decorar el header */
+#header img{
+width: 80px;
+}
+
+/* esto sirve para decorar el mensaje descataco del header */
+.text-destacado{
+ color: orangered !important;
+}
+
+/* para decorar el carusel con texto en cada imagen*/
+#main .carousel-inner img{
+max-height: 70vh;
+object-fit: cover;
+/* activar si quieres que las imagenes se vean mas apagadas */
+filter: grayscale(69%);
+
+}
+
+/* esto sirve para acomodar el texto estatico */
+#carouselExampleCaptions {
+position:relative;
+}
+#carouselExampleCaptions .overlay{
+z-index: 1;
+position: absolute;
+top: 0; 
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0,0,0,0.5);
+color:white;
+}
+#carouselExampleCaptions .container,
+#carouselExampleCaptions .row {
+height: 100%;
+}
+
+/* esto sirve para el color del fondo */
+#footer{
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+}
+
+/* esto sirve para el color de las palabras */
+#footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+

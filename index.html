@@ -12,8 +12,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="index.css" />
+    <title>Prueba Boootstrap</title>
   </head>
 
   <body>
@@ -55,12 +55,190 @@
             <!-- esta es la opcion que destacara por color -->
             <li class="nav-item">
               <a class="nav-link text-destacado" href="#">Opción Destacada</a>
+            </li>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- el footer es para diseÃ±ar el pie de pagina -->
+    <!-- main carusel con texto en cada imagen-->
+    <!-- <main id="main">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-pause="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/gato.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="color: black"
+            >
+              <h5>Gato hermoso</h5>
+              <p>texto para la imagen del gato</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/perro.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="color: orange"
+            >
+              <h5>perro hermoso</h5>
+              <p>texto para la imagen del perro</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/pajaro.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="color: white"
+            >
+              <h5>pajaro</h5>
+              <p>texto para el pajaro</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/tortugas.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="color: rgb(247, 252, 0)"
+            >
+              <h5>tortuga hermosa</h5>
+              <p>texto para la imagen de la tortuga</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main> -->
+
+    <!-- main carusel con texto en cada imagen -->
+    <main id="main">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-pause="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/gato.jpg" class="d-block w-100" alt="gato" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/perro.jpg" class="d-block w-100" alt="perro" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/pajaro.jpg" class="d-block w-100" alt="pajaro" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/tortugas.jpg"
+              class="d-block w-100"
+              alt="tortuga"
+            />
+          </div>
+        </div>
+        <div class="overlay">
+          <div class="container">
+            <div class="row aling-items-center">
+              <div class="col-md-6 offset-md-6 text-center text-md-end">
+                <h1>Animales Del Mundo</h1>
+                <p class="d-none d-md-block">
+                  Para que un organismo se clasifique científicamente como
+                  animal deben tenerse en cuenta características a nivel
+                  celular, morfológico y fisiológico. No existe una definición
+                  breve para los animales, así que pasemos de una vez a ello, no
+                  tiene nada que ver pero los gatos, los chiguiros y los
+                  ajolotes son los mejores.
+                </p>
+                <a href="https://www.nationalgeographic.com.es/animales/">
+                  Desea mas informacion?
+                </a>
+                <button type="button">ir a dar una vuelta</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- el footer es para diseñar el pie de pagina -->
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
         <div class="row text-center">
@@ -99,15 +277,19 @@
       </div>
     </footer>
 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
-
-
-
-
-
