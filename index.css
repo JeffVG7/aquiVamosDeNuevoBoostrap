@@ -2,33 +2,27 @@
 
 /* esto sirve para decorar el header */
 #header img{
-width: 80px;
-}
+width: 80px;}
 
 /* esto sirve para decorar el mensaje descataco del header */
 .text-destacado{
- color: orangered !important;
-}
+ color: orangered !important;}
 
-/* esto sirve para cambiar el color del 1r boton que dice "vamos a dar un paseo" */
+/* esto sirve para cambiar el diseño de los botones */
 .btn-animal{
 background-color: orangered;
-color:white;
-} 
+color:white;} 
 
 /* para decorar el carusel con texto en cada imagen*/
 #main .carousel-inner img{
 max-height: 70vh;
 object-fit: cover;
 /* activar si quieres que las imagenes se vean mas apagadas */
-filter: grayscale(69%);
-
-}
+filter: grayscale(69%);}
 
 /* esto sirve para acomodar el texto estatico */
 #carouselExampleCaptions {
-position:relative;
-}
+position:relative;}
 #carouselExampleCaptions .overlay{
 z-index: 1;
 position: absolute;
@@ -37,35 +31,43 @@ bottom: 0;
 left: 0;
 right: 0;
 background-color: rgba(0,0,0,0.5);
-color:white;
-}
+color:white;}
 #carouselExampleCaptions .container,
 #carouselExampleCaptions .row {
-height: 100%;
-}
+height: 100%;}
 
 /* estilo de las cartas */
 #tarjetas {
-background: rgb(255, 255, 255);
-}
+background: rgb(255, 255, 255);}
 #tarjetas img {
 height: 348px;
-object-fit: cover;
-}
+object-fit: cover;}
 .badges{
-text-align: right;
-}
+text-align: right;}
+
+/* estilo de los habitads */
+#habitad img{
+max-width: 100%;
+max-height: 70vh;
+object-fit: cover;} 
+#habitad1{
+color: white;
+background-color: #212529;} 
+#habitad2{
+color: white;
+background-color: #212529;} 
+#habitad3{
+color: white;
+background-color: #212529;} 
 
 /* esto sirve para el color del fondo */
 #footer{
-    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
-}
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);}
 
 /* esto sirve para el color de las palabras */
 #footer a{
     color: rgb(255, 255, 255);
-    text-decoration: none;
-}
+    text-decoration: none;}
 
 
 
