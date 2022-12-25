@@ -38,16 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">1ra Opción </a>
+              <a class="nav-link" href="#">Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">2nda Opción</a>
+              <a class="nav-link" href="#">Conoce algunos animales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">3ra Opción</a>
+              <a class="nav-link" href="#">Habitads y/o ecosistemas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">4rta Opción</a>
+              <a class="nav-link" href="#">Formulario</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">5nta Opción</a>
@@ -222,10 +222,21 @@
                 <p class="d-none d-md-block">
                   Para que un organismo se clasifique científicamente como
                   animal deben tenerse en cuenta características a nivel
-                  celular, morfológico y fisiológico. No existe una definición
-                  breve para los animales, así que pasemos de una vez a ello, no
-                  tiene nada que ver pero los gatos, los chiguiros y los
-                  ajolotes son los mejores.
+                  celular,
+                  <abbr
+                    title="Estudio de la estructura de un organismo o características"
+                    data-bs-toggle="tooltip"
+                    >morfologico</abbr
+                  >
+                  y 
+                  <abbr
+                  title="Ciencia que estudia las funciones de los seres orgánicos."
+                  data-bs-toggle="tooltip"
+                  >fisiológico</abbr
+                >. No existe una definición breve para los
+                  animales, así que pasemos de una vez a ello, no tiene nada que
+                  ver pero los gatos, los chiguiros y los ajolotes son los
+                  mejores.
                 </p>
                 <a
                   href="https://www.nationalgeographic.com.es/animales/"
@@ -297,7 +308,12 @@
                 <p class="card-text">
                   Un roedor de la familia de los cávidos. Es el roedor viviente
                   de mayor tamaño y peso del mundo. Vive en la zona terrestre de
-                  los bosques y sabanas tropicales hasta casi los 2.000 m s.n.m.
+                  los bosques y sabanas tropicales hasta casi los 2.000
+                  <abbr
+                    title="Metros sobre el nivel del mar"
+                    data-bs-toggle="tooltip"
+                    >m s.n.m.</abbr
+                  >
                   Está relacionado con los agutíes, las chinchillas, los coipos
                   y los conejillos de indias.
                 </p>
@@ -350,7 +366,7 @@
                 </div>
                 <h5 class="card-title mb-1">Conejo Hermoso</h5>
                 <p class="card-text">
-                  es un pequeño mamífero terrestre conocido por su rápido
+                  Es un pequeño mamífero terrestre conocido por su rápido
                   desplazamiento a través de saltos y su rápida reproducción. Es
                   pariente de los pikas y las liebres, se diferencia de estas
                   por nacer más desvalidas, ciegas y sin pelo, en tanto las
@@ -564,13 +580,31 @@
                 <textarea
                   name="text"
                   class="form-control form-control-lg"
-                  placeholder="Sobre qué quieres hablar?"
+                  placeholder="Que fue lo que paso?"
                 ></textarea>
-                <small class="form-text text-muted">
-                  Recuerda espesificar el animal del que estas hablando.
-                </small>
               </div>
             </div>
+            <div class="row">
+              <div class="col text-center">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Animal...</option>
+                  <option value="1">Gato</option>
+                  <option value="3">Perro</option>
+                  <option value="2">Conejo</option>
+                  <option value="3">Ajolote</option>
+                  <option value="3">Chiguiro</option>
+                  <option value="3">Tortuga</option>
+                  <option value="3">Serpiente</option>
+                  <option value="3">Otro...</option>
+                </select>
+              </div>
+            </div>
+            <small class="form-text text-muted">
+              Recuerda espesificar el animal del que estas hablando.
+            </small>
             <div class="form-label">
               <div class="col">
                 <button type="button" class="btn btn-outline-danger col-12">
@@ -630,6 +664,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

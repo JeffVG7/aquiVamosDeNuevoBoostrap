@@ -6,7 +6,7 @@ width: 80px;}
 
 /* esto sirve para decorar el mensaje descataco del header */
 .text-destacado{
- color: orangered !important;}
+color: orangered !important;}
 
 /* esto sirve para cambiar el diseño de los botones */
 .btn-animal{
@@ -63,6 +63,12 @@ background-color: #212529;}
 /* esto sirve para el color del fondo */
 #footer{
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);}
+
+/* para ecomodar las ventanitas de ayuda de cada palabra */
+.tooltip-inner {
+    background-color: black;
+color: white;
+    }
 
 /* esto sirve para el color de las palabras */
 #footer a{
