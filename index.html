@@ -16,9 +16,17 @@
     <title>Prueba Boootstrap</title>
   </head>
 
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNavAltMarkup"
+    data-bs-offset="0"
+    tabindex="0"
+  >
     <!-- el header es lo que se muestra arriba de la pagina -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      id="header"
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/slime.png" alt="slime" />
@@ -36,30 +44,38 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio </a>
+              <a class="nav-link" href="#main">Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conoce algunos animales</a>
+              <a class="nav-link" href="#tarjetas">Conoce algunos animales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Habitads y/o ecosistemas</a>
+              <a class="nav-link" href="#habitad">Habitads y/o ecosistemas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Formulario</a>
+              <a class="nav-link" href="#formulario">Formulario</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">5nta Opción</a>
             </li>
             <!-- esta es la opcion que destacara por color -->
             <li class="nav-item">
-              <a class="nav-link text-destacado" href="#">Opción Destacada</a>
+              <a class="nav-link text-destacado" href="#" data-bs-toggle="modal" data-bs-target="#modalSujerencias">Sujerencias</a>
             </li>
           </div>
         </div>
       </div>
     </nav>
+    <section id="tarjetas" class="mt-4">
+      <div class="container">
+        <div class="col text-center text-uppercase">
+          <small>animales </small>
+          <h3>Animales</h3>
+        </div>
+      </div>
+    </section>
 
     <!-- main carusel con texto en cada imagen-->
     <!-- <main id="main">
@@ -228,24 +244,23 @@
                     data-bs-toggle="tooltip"
                     >morfologico</abbr
                   >
-                  y 
+                  y
                   <abbr
-                  title="Ciencia que estudia las funciones de los seres orgánicos."
-                  data-bs-toggle="tooltip"
-                  >fisiológico</abbr
-                >. No existe una definición breve para los
-                  animales, así que pasemos de una vez a ello, no tiene nada que
-                  ver pero los gatos, los chiguiros y los ajolotes son los
-                  mejores.
+                    title="Ciencia que estudia las funciones de los seres orgánicos."
+                    data-bs-toggle="tooltip"
+                    >fisiológico</abbr
+                  >. No existe una definición breve para los animales, así que
+                  pasemos de una vez a ello, no tiene nada que ver pero los
+                  gatos, los chiguiros y los ajolotes son los mejores.
                 </p>
                 <a
                   href="https://www.nationalgeographic.com.es/animales/"
-                  class="btn btn-outline-dark"
+                  class="btn btn-dark"
                 >
                   Desea mas informacion?
                 </a>
                 <button type="button" class="btn btn-animal">
-                  ir a dar una vuelta
+                  Se nos olvido algo?
                 </button>
               </div>
             </div>
@@ -253,6 +268,40 @@
         </div>
       </div>
     </main>
+
+    <!-- la pantalla que se muestra al presionar el boton del carusel; tambien se llama modal -->
+    <div
+      class="modal fade"
+      id="modalSujerencias"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- las tarjetas de cada uno de los animales -->
     <section id="tarjetas" class="mt-4">

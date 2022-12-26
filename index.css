@@ -20,6 +20,11 @@ object-fit: cover;
 /* activar si quieres que las imagenes se vean mas apagadas */
 filter: grayscale(69%);}
 
+/* esto es para acomodar las imagenes del carusel */
+#main img{
+    width: 100vh;
+    height: 60vh;}
+
 /* esto sirve para acomodar el texto estatico */
 #carouselExampleCaptions {
 position:relative;}
