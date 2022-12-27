@@ -62,7 +62,13 @@
             </li>
             <!-- esta es la opcion que destacara por color -->
             <li class="nav-item">
-              <a class="nav-link text-destacado" href="#" data-bs-toggle="modal" data-bs-target="#modalSujerencias">Sujerencias</a>
+              <a
+                class="nav-link text-destacado"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSujerencias"
+                >Sujerencias</a
+              >
             </li>
           </div>
         </div>
@@ -259,7 +265,12 @@
                 >
                   Desea mas informacion?
                 </a>
-                <button type="button" class="btn btn-animal">
+                <button
+                  type="button"
+                  class="btn btn-animal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcarusel"
+                >
                   Se nos olvido algo?
                 </button>
               </div>
@@ -269,7 +280,7 @@
       </div>
     </main>
 
-    <!-- la pantalla que se muestra al presionar el boton del carusel; tambien se llama modal -->
+    <!-- la pantalla que se muestra al presionar el boton de sujerencias; tambien se llama modal -->
     <div
       class="modal fade"
       id="modalSujerencias"
@@ -280,7 +291,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Sujerencias</h5>
             <button
               type="button"
               class="btn-close"
@@ -288,16 +299,85 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <textarea
+                      name="text"
+                      class="form-control form-control-lg"
+                      placeholder="Que deseas comentarnos?"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Gracias caballero, señorita y/o avion de guerra apache k193 V7.25
+            </div>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-              Close
+              Cerrar
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-animal">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- la pantalla que se muestra al presionar el boton del carusel; tambien se llama modal -->
+    <div
+      class="modal fade"
+      id="modalcarusel"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              titulo para la ventana emergente del carusel
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            espacio libre para poner lo que desee el que use la plantilla
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-animal">Enviar</button>
           </div>
         </div>
       </div>
